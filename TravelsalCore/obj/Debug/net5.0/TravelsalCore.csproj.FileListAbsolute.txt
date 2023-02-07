@@ -263,3 +263,8 @@ C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Razor\A
 C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\bin\Debug\net5.0\DTOLayer.dll
 C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\bin\Debug\net5.0\DTOLayer.pdb
 C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ContactUs\Index.cshtml.g.cs
+C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\TravelsalCore.StaticWebAssets.Pack.cache
+C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.TravelsalCore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.build.TravelsalCore.props
+C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelsalCore.props
+C:\Users\MINAD\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelsalCore.props
