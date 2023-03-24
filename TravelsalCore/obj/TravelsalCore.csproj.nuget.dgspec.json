@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj": {}
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\MINAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\gamze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MINAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gamze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,23 +22,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nuget.dev.paximum.com/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://santsg-371035114628.d.codeartifact.eu-west-1.amazonaws.com/nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj"
               },
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -96,8 +89,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -106,25 +98,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\MINAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\gamze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MINAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gamze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,17 +120,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nuget.dev.paximum.com/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://santsg-371035114628.d.codeartifact.eu-west-1.amazonaws.com/nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -192,8 +177,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -202,25 +186,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj": {
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj",
+        "projectUniqueName": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj",
         "projectName": "DTOLayer",
-        "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj",
-        "packagesPath": "C:\\Users\\MINAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DTOLayer\\obj\\",
+        "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\DTOLayer.csproj",
+        "packagesPath": "C:\\Users\\gamze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DTOLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MINAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gamze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -228,10 +208,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nuget.dev.paximum.com/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://santsg-371035114628.d.codeartifact.eu-west-1.amazonaws.com/nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -254,8 +231,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -264,25 +240,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\MINAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\gamze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MINAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gamze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -290,10 +262,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nuget.dev.paximum.com/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://santsg-371035114628.d.codeartifact.eu-west-1.amazonaws.com/nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -346,8 +315,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -356,25 +324,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj": {
+    "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj",
+        "projectUniqueName": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj",
         "projectName": "TravelsalCore",
-        "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj",
-        "packagesPath": "C:\\Users\\MINAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\TravelsalCore\\obj\\",
+        "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\TravelsalCore\\TravelsalCore.csproj",
+        "packagesPath": "C:\\Users\\gamze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\TravelsalCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MINAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gamze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -382,23 +346,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nuget.dev.paximum.com/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://santsg-371035114628.d.codeartifact.eu-west-1.amazonaws.com/nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\MINAD\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\gamze\\source\\repos\\TravelsalCore\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -480,8 +441,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -493,7 +453,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
