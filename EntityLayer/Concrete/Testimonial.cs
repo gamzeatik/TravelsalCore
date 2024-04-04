@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace EntityLayer.Concrete
 {    
     public class Testimonial
+        //referanslar kismi
     {
         [Key]
         public int TestimonialID { get; set; }

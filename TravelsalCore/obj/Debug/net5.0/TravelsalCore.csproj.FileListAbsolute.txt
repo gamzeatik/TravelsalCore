@@ -527,9 +527,15 @@ C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Razor\V
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.RazorTargetAssemblyInfo.cache
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.RazorTargetAssemblyInfo.cs
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.Views.pdb
-C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.csproj.CopyComplete
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.dll
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\refint\TravelsalCore.dll
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.pdb
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.genruntimeconfig.cache
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\ref\TravelsalCore.dll
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\TravelsalCore.sourcelink.json
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\TravelsalCore.StaticWebAssets.Pack.cache
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.TravelsalCore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.build.TravelsalCore.props
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelsalCore.props
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelsalCore.props
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Travelsa.008F29D4.Up2Date

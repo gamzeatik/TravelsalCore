@@ -25,33 +25,57 @@ namespace TravelsalCore.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> SignUp(UserRegisterViewModel p)
-        {
-            AppUser appUser = new AppUser()
-            {
-                Name = p.Name,
-                Surname = p.Surname,
-                Email = p.Mail,
-                UserName = p.Username
-            };
-            if (p.Password == p.ConfirmPassword)
-            {
-                var result=await _userManager.CreateAsync(appUser,p.Password);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("SignIn");
-                }
-                else
-                {
-                    foreach (var item in result.Errors)
-                    {
-                        ModelState.AddModelError("", item.Description);
-                    }
-                }
-            }
-            return View(p);
-        }
-        [HttpGet]
+		public async Task<IActionResult> SignUp(UserRegisterViewModel p)
+		{
+			// Check for duplicates
+			var existingUserByUsername = await _userManager.FindByNameAsync(p.Username);
+			var existingUserByEmail = await _userManager.FindByEmailAsync(p.Mail);
+
+			if (existingUserByUsername != null)
+			{
+				ModelState.AddModelError("Username", "This username is already in use.");
+			}
+
+			if (existingUserByEmail != null)
+			{
+				ModelState.AddModelError("Mail", "This email address is already in use.");
+			}
+
+			if (p.Password != p.ConfirmPassword)
+			{
+				ModelState.AddModelError("", "Password and password confirmation do not match.");
+			}
+
+			// If all validations pass, create the new user
+			if (ModelState.IsValid)
+			{
+				AppUser appUser = new AppUser()
+				{
+					Name = p.Name,
+					Surname = p.Surname,
+					Email = p.Mail,
+					UserName = p.Username
+				};
+
+				var result = await _userManager.CreateAsync(appUser, p.Password);
+
+				if (result.Succeeded)
+				{
+					return RedirectToAction("SignIn");
+				}
+				else
+				{
+					foreach (var error in result.Errors)
+					{
+						ModelState.AddModelError("", error.Description);
+					}
+				}
+			}
+
+			return View(p);
+		}
+
+		[HttpGet]
         public IActionResult SignIn()
         {
             return View();

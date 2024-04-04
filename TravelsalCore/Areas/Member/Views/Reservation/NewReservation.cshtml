@@ -4,28 +4,28 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h1>Yeni Rezervasyon</h1>
+<h3>New Booking</h3>
 
 <form method="post">
     <div class="form-group">
-    @Html.Label("Lokasyon")
+    @Html.Label("Destination")
     @Html.DropDownListFor(x=>x.Destination,(List<SelectListItem>)ViewBag.v, new {@class="form-control"})
     </div>
     <div class="form-group">
-        @Html.Label("Kişi Sayısı")
+        @Html.Label("Persom Count")
         <input type="text" asp-for="PersonCount" class="form-control"/>
     </div>
     <div class="form-group">
-        @Html.Label("Tarih")
+        @Html.Label("Reservation Date")
         <input type="date" asp-for="ReservationDate" class="form-control" />
     </div>
     <div class="form-group">
-        @Html.Label("Ek Not")
+        @Html.Label("Description")
         <textarea type="text" asp-for="Description" class="form-control"> </textarea>
     </div>
-    <button class="btn btn-success">Rezervasyon Yap</button>
+    <button class="btn btn-success">Save</button>
 </form>
 <script>
     window.onload=(function () {
-        alert('Rezervasyonunuz başlangıçta onay bekliyor şeklinde alınacaktır.Rezervasyon onaylanma süreci için "Güncel Rezervasyonlarım" menusunu takip etmeyi unutmayın.');
+        alert('Your reservation will initially be received as pending approval. Do not forget to follow the "Active Bookings" menu for the reservation confirmation process.');
     });</script>

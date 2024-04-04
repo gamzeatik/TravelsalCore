@@ -28,3 +28,4 @@ C:\Users\gamze\source\repos\TravelsalCore\EntityLayer\obj\Debug\net5.0\refint\En
 C:\Users\gamze\source\repos\TravelsalCore\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 C:\Users\gamze\source\repos\TravelsalCore\EntityLayer\obj\Debug\net5.0\EntityLayer.genruntimeconfig.cache
 C:\Users\gamze\source\repos\TravelsalCore\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\gamze\source\repos\TravelsalCore\EntityLayer\obj\Debug\net5.0\EntityLayer.sourcelink.json

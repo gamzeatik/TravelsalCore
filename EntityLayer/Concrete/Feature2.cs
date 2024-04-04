@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
+    //one cikanlar kucuk olanlar
     public class Feature2
     {
         [Key]

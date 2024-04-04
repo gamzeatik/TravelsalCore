@@ -20,7 +20,7 @@ namespace TravelsalCore.Controllers
             p.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             p.CommentState = true;
             commentManager.TAdd(p);
-            return RedirectToAction("Index","Destination");
+            return RedirectToAction("Index","Destination");//redirect to destination detail
         }
     }
 }

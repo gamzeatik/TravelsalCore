@@ -4,10 +4,10 @@ namespace TravelsalCore.Models
 {
     public class UserSignInViewModel
     {
-        [Required(ErrorMessage ="Lütfen kullanıcı adını giriniz!")]
+        [Required(ErrorMessage ="Username is required!")]
         public string Username { get; set; }
 
-        [Required(ErrorMessage = "Lütfen kullanıcı şifrenizi giriniz!")]
+        [Required(ErrorMessage = "Password is required!")]
         public string Password { get; set; }
     }
 }

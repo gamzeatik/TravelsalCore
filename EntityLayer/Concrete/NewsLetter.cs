@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace EntityLayer.Concrete
 {
     public class NewsLetter
+        //mail bulteni
     {
         [Key]
         public int NewsLetterID { get; set; }

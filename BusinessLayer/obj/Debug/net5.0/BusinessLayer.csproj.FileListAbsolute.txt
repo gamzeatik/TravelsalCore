@@ -36,9 +36,10 @@ C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\Busines
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfoInputs.cache
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfo.cs
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CoreCompileInputs.cache
-C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\refint\BusinessLayer.dll
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.genruntimeconfig.cache
 C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
+C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\BusinessLayer.sourcelink.json
+C:\Users\gamze\source\repos\TravelsalCore\BusinessLayer\obj\Debug\net5.0\Business.EA331CBA.Up2Date
