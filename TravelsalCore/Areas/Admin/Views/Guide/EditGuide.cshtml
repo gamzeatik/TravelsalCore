@@ -1,11 +1,12 @@
 ﻿@model EntityLayer.Concrete.Guide
 @{
-    ViewData["Title"] = "AddGuide";
+    ViewData["Title"] = "EditGuide";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h3>New Guide</h3>
+<h3>Update</h3>
 <form method="post">
+    @Html.HiddenFor(x=> x.GuideID)
     <div class="form-group">
         @Html.Label("Name Surname")
         <input type="text" asp-for="Name" class="form-control" />
@@ -27,10 +28,11 @@
         <input type="text" asp-for="TwitterUrl" class="form-control" />
     </div><br />
     <div class="form-group">
-        @Html.Label("Description")
+        @Html.Label("Descrption")
         <textarea type="text" asp-for="Description" class="form-control"> </textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
     <br />
-    <button class="btn btn-primary">Save</button>
+    <button class="btn btn-primary">Update</button>
 </form>
+

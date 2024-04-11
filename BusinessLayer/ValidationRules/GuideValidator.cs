@@ -12,11 +12,11 @@ namespace BusinessLayer.ValidationRules
     {
         public GuideValidator()
         {
-            RuleFor(x => x.Name).NotEmpty().WithMessage("Rehber adı boş olamaz.");
-            RuleFor(x => x.Description).NotEmpty().WithMessage("Rehber açıklaması boş olamaz.");
-            RuleFor(x => x.Image).NotEmpty().WithMessage("Rehber fotoğrafı boş olamaz.");
-            RuleFor(x => x.Name).MaximumLength(30).WithMessage("Lütfen 30 karakterden daha az giriş yapın.");
-            RuleFor(x => x.Description).MinimumLength(10).WithMessage("Lütfen 10 karakterden daha fazla giriş yapın.");
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Guide name cannot be empty.");
+            RuleFor(x => x.Description).NotEmpty().WithMessage("Guide description cannot be empty.");
+            RuleFor(x => x.Image).NotEmpty().WithMessage("Guide image cannot be empty.");
+            RuleFor(x => x.Name).MaximumLength(30).WithMessage("Please enter no more than 30 characters.");
+            RuleFor(x => x.Description).MinimumLength(10).WithMessage("Please enter at least 10 characters.");
         }
     }
 }

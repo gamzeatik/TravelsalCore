@@ -6,27 +6,27 @@
     int sayac=0;
 }
 
-<h1>Kullanıcının Geçmiş Rezervasyonları</h1>
+<h3>Reservations</h3>
 
 <table class="table table-bordered">
     <tr>
         <th>#</th>
-        <th>Misafir Ad Soyad</th>
-        <th>Rota</th>
-        <th>Kişi Sayısı</th>
-        <th>Tarih</th>
-        <th>Detaylar</th>
+        <th>Guest Name Surname</th>
+        <th>Destination</th>
+        <th>Person Count</th>
+        <th>Date</th>
+        <th>Details</th>
     </tr>
     @foreach (var item in Model)
     {
         { sayac = sayac + 1; }
         <tr>
             <td>@sayac</td>
-            <td>@item.AppUser.Name @item.AppUser.Surname</td>
+            <td>@item.AppUser.Name @item.AppUser.Surname</td> @* duzenlencek *@
             <td>@item.Destination.City</td>
             <td>@item.PersonCount</td>
             <td>@(((DateTime)item.ReservationDate).ToString("dd-MMM-yyyy"))</td>
-            <td><a href="" class="btn btn-outline-primary">Detaylar</a></td>
+            <td><a href="" class="btn btn-outline-primary">Details</a></td>
         </tr>
     }
 </table>

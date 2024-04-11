@@ -539,3 +539,4 @@ C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticw
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelsalCore.props
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelsalCore.props
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Travelsa.008F29D4.Up2Date
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Guide\EditGuide.cshtml.g.cs

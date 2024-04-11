@@ -5,15 +5,15 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Yorum Listesi</h1>
+<h3>Comment List</h3>
 <table class="table table-bordered">
     <tr>
         <th>#</th>
-        <th>Kullanıcı</th>
-        <th>Rota</th>
-        <th>Tarih</th>
-        <th>Detay</th>
-        <th>Sil</th>
+        <th>User</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Detail</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -23,7 +23,7 @@
             <td>@item.Destination.City</td>
             <td>@(((DateTime)item.CommentDate).ToString("dd-MMM-yyyy"))</td>
             <td>@item.CommentContent</td>
-            <td><a href="/Admin/Comment/DeleteComment/@item.CommentID" class="btn btn-outline-danger" style="width:100%">Sil</a></td>
+            <td><a href="/Admin/Comment/DeleteComment/@item.CommentID" class="btn btn-outline-danger" style="width:100%">Delete</a></td>
         </tr>
     }
 </table>

@@ -1,3 +1,0 @@
-2023-03-07T14:40:13.1279563+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
-2023-03-07T14:40:13.1503117+01:00  [INF] Hosting environment: "Development" (c3307c92)
-2023-03-07T14:40:13.1529887+01:00  [INF] Content root path: "C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore" (b5d60022)

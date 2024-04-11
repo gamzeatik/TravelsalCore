@@ -6,17 +6,17 @@
     int sayac = 0;
 }
 
-<h1>Kullanıcılar</h1>
+<h3>Users</h3>
 <table class="table table-bordered">
     <tr>
         <th>#</th>
-        <th>Ad Soyad</th>
-        <th>Kullanıcı Adı</th>
+        <th>Name Surname</th>
+        <th>User Name</th>
         <th>E mail</th>
-        <th>Yorumlar</th>
-        <th>Tur Geçmişi</th>
-        <th>Düzenle</th>
-        <th>Sil</th>
+        <th>Comments</th>
+        <th>Reservations</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -28,11 +28,11 @@
             <td>@item.Name @item.Surname</td>
             <td>@item.UserName</td>
             <td>@item.Email</td>
-            <td><a href="/Admin/User/CommentUser/@item.Id" class="btn btn-outline-info" style="width:100%">Yorumlar</a></td>
-            <td><a href="/Admin/User/ReservationUser/@item.Id" class="btn btn-outline-primary" style="width:100%">Tur Geçmişi</a></td>
-            <td><a href="/Admin/User/EditUser/@item.Id" class="btn btn-outline-success" style="width:100%">Düzenle</a></td>
-            <td><a href="/Admin/User/DeleteUser/@item.Id" class="btn btn-outline-danger" style="width:100%">Sil</a></td>
+            <td><a href="/Admin/User/CommentUser/@item.Id" class="btn btn-outline-info" style="width:100%">Comments</a></td>
+            <td><a href="/Admin/User/ReservationUser/@item.Id" class="btn btn-outline-primary" style="width:100%">Reservations</a></td>
+            <td><a href="/Admin/User/EditUser/@item.Id" class="btn btn-outline-success" style="width:100%">Edit</a></td>
+            <td><a href="/Admin/User/DeleteUser/@item.Id" class="btn btn-outline-danger" style="width:100%">Delete</a></td>
         </tr>
     }
 </table>
-<a href="/Login/SignUp/" class="btn btn-outline-primary">Yeni Kullanıcı Ekle</a>
+<a href="/Login/SignUp/" class="btn btn-outline-primary">Add new User</a>

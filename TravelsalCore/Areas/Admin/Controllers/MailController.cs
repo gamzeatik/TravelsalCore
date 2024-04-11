@@ -21,7 +21,7 @@ namespace TravelsalCore.Areas.Admin.Controllers
         public IActionResult Index(MailRequest mailRequest)
         {
             MimeMessage mimeMessage = new MimeMessage();
-            MailboxAddress mailboxAddressFrom = new MailboxAddress("Admin", "gamze.atik.santsg@gmail.com");
+            MailboxAddress mailboxAddressFrom = new MailboxAddress("Admin", "gamze.atik.santsg@gmail.com");//name - sender mail
             mimeMessage.From.Add(mailboxAddressFrom);
 
             MailboxAddress mailboxAddressTo = new MailboxAddress("User", mailRequest.ReceiverMail);
@@ -35,7 +35,7 @@ namespace TravelsalCore.Areas.Admin.Controllers
 
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.Connect("smtp.gmail.com", 587, false);
-            smtpClient.Authenticate("gamze.atik.santsg@gmail.com", "eujofnghsbumyacw");//gmail app pass alanindan olusturdugum sifre
+            smtpClient.Authenticate("gamze.atik.santsg@gmail.com", "eujofnghsbumyacw");//gmail app pass alanindan olusturdugum sifre //sender mail
             smtpClient.Send(mimeMessage);
             smtpClient.Disconnect(true);
             return View();

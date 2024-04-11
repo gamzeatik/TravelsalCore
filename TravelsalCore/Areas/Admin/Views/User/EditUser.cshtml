@@ -4,22 +4,22 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Düzenle</h1>
+<h3>Edit</h3>
 <form method="post">
     @Html.HiddenFor(x=>x.Id)
     <div class="form-group">
-        @Html.Label("Ad")
+        @Html.Label("Name")
         <input type="text" asp-for="Name" class="form-control" />
     </div>
     <br />
     <div class="form-group">
-        @Html.Label("Soyad")
+        @Html.Label("Surname")
         <input type="text" asp-for="Surname" class="form-control" />
     </div>
     <br />
     <div class="form-group">
-        @Html.Label("Fotoğraf")
+        @Html.Label("Image Url")
         <input type="text" asp-for="ImageUrl" class="form-control" />
     </div><br />
-    <button class="btn btn-primary">Kaydet</button>
+    <button class="btn btn-primary">Save</button>
 </form>

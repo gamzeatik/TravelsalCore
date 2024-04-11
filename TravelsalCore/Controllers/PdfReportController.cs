@@ -13,7 +13,7 @@ namespace TravelsalCore.Controllers
         }
         public IActionResult StaticPdfReport()
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/PdfReports/" + "dosya1.pdf");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/PdfReports/" + "pdReport.pdf");
             var stream = new FileStream(path, FileMode.Create);
             Document document = new Document(PageSize.A4);
             PdfWriter.GetInstance(document, stream);
@@ -22,11 +22,11 @@ namespace TravelsalCore.Controllers
             Paragraph paragraph = new Paragraph("Traversal rezervasyon pdf raporu.");
             document.Add(paragraph); 
             document.Close();
-            return File("PdfReports/dosya1.pdf", "application/pdf", "dosya1.pdf");
+            return File("PdfReports/pdReport.pdf", "application/pdf", "pdReport.pdf");
         }
         public IActionResult StaticCustomerReport()
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/PdfReports/" + "dosya1.pdf");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/PdfReports/" + "pdReport.pdf");
             var stream = new FileStream(path, FileMode.Create);
             Document document = new Document(PageSize.A4);
             PdfWriter.GetInstance(document, stream);
@@ -50,7 +50,7 @@ namespace TravelsalCore.Controllers
             pdfPTable.AddCell("33333333333");
             document.Add(pdfPTable);
             document.Close();
-            return File("PdfReports/dosya1.pdf", "application/pdf", "dosya2.pdf");
+            return File("PdfReports/pdReport.pdf", "application/pdf", "pdfReport2.pdf");
         }
 
     }
