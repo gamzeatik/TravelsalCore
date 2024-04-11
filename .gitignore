@@ -1,0 +1,6 @@
+# Visual Studio geçici dosyaları
+.vs/
+
+# Visual Studio proje özel dosyaları
+*.suo
+*.user
