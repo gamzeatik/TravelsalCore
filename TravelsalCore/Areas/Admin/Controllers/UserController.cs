@@ -1,11 +1,14 @@
 ﻿using BusinessLayer.Abstract;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/User")]
+    [Authorize(Roles = "Admin")]
+
     public class UserController : Controller
     {
         private readonly IAppUserService _appUserService;
@@ -45,7 +48,10 @@ namespace TravelsalCore.Areas.Admin.Controllers
         public IActionResult EditUser(AppUser appUser)
         {
             _appUserService.TUpdate(appUser);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "User", new
+            {
+                area = "Admin"
+            });
         }
         [Route("CommentUser/{id}")]
         public IActionResult CommentUser(int id)

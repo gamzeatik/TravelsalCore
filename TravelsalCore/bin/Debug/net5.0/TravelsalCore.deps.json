@@ -327,6 +327,23 @@
         "runtime": {
           "TravelsalCore.dll": {}
         },
+        "resources": {
+          "de/TravelsalCore.resources.dll": {
+            "locale": "de"
+          },
+          "en/TravelsalCore.resources.dll": {
+            "locale": "en"
+          },
+          "es/TravelsalCore.resources.dll": {
+            "locale": "es"
+          },
+          "fr/TravelsalCore.resources.dll": {
+            "locale": "fr"
+          },
+          "tr/TravelsalCore.resources.dll": {
+            "locale": "tr"
+          }
+        },
         "compile": {
           "TravelsalCore.dll": {}
         }

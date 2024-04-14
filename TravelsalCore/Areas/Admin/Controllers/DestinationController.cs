@@ -2,12 +2,15 @@
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Destination")]
+    [Authorize(Roles = "Admin")]
+
     public class DestinationController : Controller
     {
         //DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());

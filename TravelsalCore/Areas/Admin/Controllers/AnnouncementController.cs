@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using TravelsalCore.Areas.Admin.Models;
@@ -7,6 +8,8 @@ using TravelsalCore.Areas.Admin.Models;
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class AnnouncementController : Controller
     {
         private readonly IAnnouncementService _announcementService;

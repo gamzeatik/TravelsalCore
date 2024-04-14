@@ -29,6 +29,7 @@ using TravelsalCore.Models;
 
 using TravelsalCore.CQRS.Handlers.DestinationHandlers;
 using MediatR;
+using DocumentFormat.OpenXml.Math;
 
 namespace TravelsalCore
 {
@@ -139,5 +140,19 @@ namespace TravelsalCore
                 );
             });
         }
+        public async Task ConfigureAsync(IApplicationBuilder app, IWebHostEnvironment env, RoleManager<AppRole> roleManager)
+        {
+            var adminRoleExists = await roleManager.RoleExistsAsync("Admin");
+            if (!adminRoleExists)
+            {
+                await roleManager.CreateAsync(new AppRole { Name = "Admin" });
+            }
+            var memberRoleExists = await roleManager.RoleExistsAsync("Member");
+            if (!memberRoleExists)
+            {
+                await roleManager.CreateAsync(new AppRole { Name = "Member" });
+            }
+        }
+
     }
 }

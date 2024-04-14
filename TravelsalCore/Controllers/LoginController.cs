@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Threading.Tasks;
 using TravelsalCore.Models;
 
@@ -11,12 +12,14 @@ namespace TravelsalCore.Controllers
     public class LoginController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
         private readonly SignInManager<AppUser> _signInManager;
 
-        public LoginController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public LoginController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<AppRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
         [HttpGet]
@@ -57,11 +60,12 @@ namespace TravelsalCore.Controllers
 					UserName = p.Username
 				};
 
-				var result = await _userManager.CreateAsync(appUser, p.Password);
-
+                var result = await _userManager.CreateAsync(appUser, p.Password);
+				
 				if (result.Succeeded)
 				{
-					return RedirectToAction("SignIn");
+                    await _userManager.AddToRoleAsync(appUser, "Member");
+                    return RedirectToAction("SignIn");
 				}
 				else
 				{

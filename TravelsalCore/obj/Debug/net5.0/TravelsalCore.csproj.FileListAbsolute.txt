@@ -585,3 +585,4 @@ C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\en\Trav
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\es\TravelsalCore.resources.dll
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\fr\TravelsalCore.resources.dll
 C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\tr\TravelsalCore.resources.dll
+C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\obj\Debug\net5.0\Razor\Views\AdminLogin\SignIn.cshtml.g.cs

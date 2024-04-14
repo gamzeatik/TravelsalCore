@@ -1,12 +1,15 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Comment")]
+    [Authorize(Roles = "Admin")]
+
     public class CommentController : Controller
     {
         //CommentManager commentManager = new CommentManager(new EfCommentDal());

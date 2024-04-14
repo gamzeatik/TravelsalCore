@@ -8,23 +8,23 @@ namespace TravelsalCore.Models
 {
     public class UserRegisterViewModel
     {
-        [Required(ErrorMessage = "Lütfen adınızı giriniz")]
+        [Required(ErrorMessage = "Name is required!")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Lütfen soyadınızı giriniz")]
+        [Required(ErrorMessage = "Surname is required!")]
         public string Surname { get; set; }
 
-        [Required(ErrorMessage = "Lütfen kullanıcı adını giriniz")]
+        [Required(ErrorMessage = "Username is required!")]
         public string Username { get; set; }
 
-        [Required(ErrorMessage = "Lütfen mail adresini giriniz")]
+        [Required(ErrorMessage = "Mail is required!")]
         public string Mail { get; set; }
 
-        [Required(ErrorMessage = "Lütfen şifreyi giriniz")]
+        [Required(ErrorMessage = "Password is required!")]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "Lütfen şifreyi tekrar giriniz")]
-        [Compare("Password",ErrorMessage ="şifreler uyumlu değil")]
+        [Required(ErrorMessage = "Confirm the Password")]
+        [Compare("Password",ErrorMessage ="Not Matches!")]
         public string ConfirmPassword { get; set; }
     }
 }

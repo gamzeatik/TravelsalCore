@@ -1,4 +1,5 @@
 ﻿using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using TravelsalCore.Models;
@@ -7,6 +8,8 @@ namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Route("Admin/Index")]
+    [Authorize(Roles = "Admin")]
+
     public class MailController : Controller
     {
         //[Route("")]
