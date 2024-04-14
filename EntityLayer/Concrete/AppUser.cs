@@ -14,5 +14,10 @@ namespace EntityLayer.Concrete
         public string Surname { get; set; }
         public string Gender { get; set; }
         public List<Reservation> reservations { get; set; }
+
+        public static implicit operator AppUser(Task<AppUser> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

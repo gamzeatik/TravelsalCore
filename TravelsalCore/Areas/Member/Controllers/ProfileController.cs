@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using TravelsalCore.Areas.Member.Models;
 
@@ -20,21 +22,22 @@ namespace TravelsalCore.Areas.Member.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task <IActionResult> Index()
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             UserEditViewModel userEditViewModel = new UserEditViewModel();
-            userEditViewModel.Name = values.Name;
-            userEditViewModel.Surname = values.Surname;
-            userEditViewModel.PhoneNumber = values.PhoneNumber;
-            userEditViewModel.Mail = values.Email;
+            userEditViewModel.name = values.Name;
+            userEditViewModel.surname = values.Surname;
+            userEditViewModel.phonenumber = values.PhoneNumber;
+            userEditViewModel.mail = values.Email;
             return View(userEditViewModel);
         }
+
         [HttpPost]
         public async Task<IActionResult> Index(UserEditViewModel p)
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            if (p.Image!=null)
+            if (p.Image != null)
             {
                 var resource = Directory.GetCurrentDirectory();
                 var extension = Path.GetExtension(p.Image.FileName);
@@ -44,9 +47,9 @@ namespace TravelsalCore.Areas.Member.Controllers
                 await p.Image.CopyToAsync(stream);
                 user.ImageUrl = imagename;
             }
-            user.Name = p.Name;
-            user.Surname=p.Surname;
-            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.Password);
+            user.Name = p.name;
+            user.Surname = p.surname;
+            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.password);
             var result = await _userManager.UpdateAsync(user);
             if (result.Succeeded)
             {

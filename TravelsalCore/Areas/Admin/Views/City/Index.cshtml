@@ -4,52 +4,52 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<h2>Şehir-Ülke İşlemleri</h2>
+<h2>Destinations</h2>
 <br />
-<button type="button" id="btngetlist" class="btn btn-outline-info">Şehir Listesi</button>
-<button type="button" id="btngetbyid1" class="btn btn-outline-primary">Şehir Getir</button>
-<button type="button" id="btnaddcity1" class="btn btn-outline-success">Şehir Ekle</button>
-<button type="button" id="btndeletecity1" class="btn btn-outline-danger">Şehir Sil</button>
-<button type="button" id="btnupdatecity" class="btn btn-outline-warning">Şehir Güncelle</button>
+<button type="button" id="btngetlist" class="btn btn-outline-info">Destination List</button>
+<button type="button" id="btngetbyid1" class="btn btn-outline-primary">Get the Destination</button>
+<button type="button" id="btnaddcity1" class="btn btn-outline-success">Add new Destination</button>
+<button type="button" id="btndeletecity1" class="btn btn-outline-danger">Delete the Destination</button>
+<button type="button" id="btnupdatecity" class="btn btn-outline-warning">Update the Destination</button>
 <br />
 @*sehir list*@
 <div id="citylist"> </div> <br />
 @*sehir getir butonu*@
 <div id="getbyidbutton">
-    <input type="text" id="txtid" placeholder="Şehir Id Değeri" class="form-control" /><br />
-    <button type="button" id="btngetbyid" class="btn btn-outline-primary">Getir</button>
+    <input type="text" id="txtid" placeholder="Id" class="form-control" /><br />
+    <button type="button" id="btngetbyid" class="btn btn-outline-primary">Get</button>
 </div><br />
 
 @*sehir getir icerik*@
 <div id="destinationlistbyid"> </div><br />
 @*delete alani*@
 <div id="getbyidbuttonfordelete">
-    <input type="text" id="txtcityid" placeholder="Silinecek Id Değeri" class="form-control" /><br />
-    <button type="button" id="btndeletecity" class="btn btn-outline-primary">Sil</button>
+    <input type="text" id="txtcityid" placeholder="Id" class="form-control" /><br />
+    <button type="button" id="btndeletecity" class="btn btn-outline-primary">Delete</button>
 </div>
 <br />
 
 @*sehir ekle icerik*@
 <div id="addcityfield">
-    <input type="text" id="txtcity" placeholder="Şehir Adı" class="form-control"/><br />
-    <input type="text" id="txtdaynight" placeholder="2 Gece 3 Gün" class="form-control" /><br />
-    <input type="text" id="txtprice" placeholder="Fiyat" class="form-control" /><br />
-    <input type="text" id="txtcapacity" placeholder="Kapasite" class="form-control" /><br />
-    <button type="button" id="btnaddcity" class="btn btn-outline-success">Ekle</button>
+    <input type="text" id="txtcity" placeholder="Destination" class="form-control"/><br />
+    <input type="text" id="txtdaynight" placeholder="DayNight" class="form-control" /><br />
+    <input type="text" id="txtprice" placeholder="Price" class="form-control" /><br />
+    <input type="text" id="txtcapacity" placeholder="Capacity" class="form-control" /><br />
+    <button type="button" id="btnaddcity" class="btn btn-outline-success">Add</button>
 </div><br />
 @*sehir update*@
 <div id="editcity">
-    <input type="text" id="txtcityidedit" placeholder="Güncellenecek Şehir Id" class="form-control" /><br />
-    <input type="text" id="txtcitynameedit" placeholder="Şehir Adı" class="form-control" /><br />
-    <input type="text" id="txtcitydaynightedit" placeholder="Gün-Gece" class="form-control" /><br />
-    <input type="text" id="txtcitypriceedit" placeholder="Fiyat" class="form-control" /><br />
-    <input type="text" id="txtcitycapacityedit" placeholder="Kapasite" class="form-control" /><br />
-    <button type="button" id="btneditcity1" class="btn btn-outline-success">Güncelle</button>
+    <input type="text" id="txtcityidedit" placeholder="Id" class="form-control" /><br />
+    <input type="text" id="txtcitynameedit" placeholder="Destination" class="form-control" /><br />
+    <input type="text" id="txtcitydaynightedit" placeholder="DayNight" class="form-control" /><br />
+    <input type="text" id="txtcitypriceedit" placeholder="Price" class="form-control" /><br />
+    <input type="text" id="txtcitycapacityedit" placeholder="Capacity" class="form-control" /><br />
+    <button type="button" id="btneditcity1" class="btn btn-outline-success">Update</button>
 </div>
 <br />
 
 
-<button type="button" id="btnclose" class="btn btn-outline-danger">Kapat</button>
+<button type="button" id="btnclose" class="btn btn-outline-danger">Close Tabs</button>
 <script>
     $(function () {
         $("#addcityfield")
@@ -77,7 +77,7 @@
             success:function(func){
                 let w=jQuery.parseJSON(func);
                 console.log(w);
-                let tablehtml = "<table class=table table-bordered> <tr><th>Şehir Id</th><th>Şehir Adı</th><th>Gün-Gece</th><th>Fiyat</th><tr>";
+                let tablehtml = "<table class=table table-bordered> <tr><th>Id</th><th>Destination</th><th>DayNight</th><th>Price</th><tr>";
                 $.each(w,(index,value)=>{
                     tablehtml += `<tr><td>${value.DestinationID}</td><td>${value.City}</td><td>${value.DayNight}</td><td>${value.Price} $ </td></tr>`
                 });
@@ -105,7 +105,7 @@
             data:cityvalues,
             success:function(func){
                 let result=jQuery.parseJSON(func);
-                alert("Şehir-Rota başarılı bir şekilde eklendi.");
+                alert("Destination added succesfuly.");
             }
         });
     });
@@ -144,7 +144,7 @@
             success:function(fun2){
             let result=jQuery.parseJSON(fun2);
             console.log(result);
-                let htmlstr = `<table class=table table-bordered><tr><th>Şehir Adı</th><th>Gün-Gece</th><th>Fiyat</th></tr><tr><td>${result.City}</td><td>${result.DayNight}</td><td>${result.Price}</td></tr></table>`;
+                let htmlstr = `<table class=table table-bordered><tr><th>Destination</th><th>DayNight</th><th>Price</th></tr><tr><td>${result.City}</td><td>${result.DayNight}</td><td>${result.Price}</td></tr></table>`;
                 $("#destinationlistbyid").html(htmlstr);
             }
         });
@@ -164,7 +164,7 @@
             contentType: "application/json",
             dataType:"json",
             success:function(func3){                
-                alert("Kayıt silindi.");
+                alert("Deleted!");
             }
         });
     });
@@ -188,7 +188,7 @@
             url: "/Admin/City/UpdateCity/",
             data:values,
             succes:function(fun4){
-                alert("Güncelleme başarıyla tamamlandı.");
+                alert("Updated!");
             }
         });
     });

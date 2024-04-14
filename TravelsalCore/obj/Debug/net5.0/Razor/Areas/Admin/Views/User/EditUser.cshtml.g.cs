@@ -21,7 +21,7 @@ using TravelsalCore;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\Areas\Admin\Views\_ViewImports.cshtml"
-using TravelsalCore.Areas.Member.Models;
+using TravelsalCore.Areas.Admin;
 
 #line default
 #line hidden
@@ -34,7 +34,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a2194140", @"/Areas/Admin/Views/User/EditUser.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d5a66b95ec9c92d4a8c25e8fc9150c6c24249d88f386a5ae94beea7469e70d5a", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"68f690cfba64daa740a914bc04b7433e9467f5c07aea8dc7c0c8f3b3756b3240", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_User_EditUser : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<EntityLayer.Concrete.AppUser>
     #nullable disable
@@ -78,7 +78,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<h3>Edit</h3>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941405104", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941405096", async() => {
                 WriteLiteral("\r\n    ");
 #nullable restore
 #line 9 "C:\Users\gamze\source\repos\TravelsalCore\TravelsalCore\Areas\Admin\Views\User\EditUser.cshtml"
@@ -96,7 +96,7 @@ Write(Html.HiddenFor(x=>x.Id));
 #line hidden
 #nullable disable
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941405933", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941405925", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -128,7 +128,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941408085", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a21941408077", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -160,7 +160,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a219414010242", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1a49ffd2aec3fae79dadcf03b6f27f5e08b4ea2601bd1c0e430e3a2a219414010234", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

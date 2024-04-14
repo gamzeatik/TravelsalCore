@@ -12,14 +12,14 @@ namespace BusinessLayer.ValidationRules
     {
         public AppUserRegisterValidator()
         {
-            RuleFor(x => x.Name).NotEmpty().WithMessage("İsim boş bırakılamaz");
-            RuleFor(x => x.Surname).NotEmpty().WithMessage("Soyad boş bırakılamaz");
-            RuleFor(x => x.Mail).NotEmpty().WithMessage("Mail boş bırakılamaz");
-            RuleFor(x => x.Username).NotEmpty().WithMessage("Kullanıcı adı boş bırakılamaz");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş bırakılamaz");
-            RuleFor(x => x.ConfirmPassword).NotEmpty().WithMessage("Şifre tekrar boş bırakılamaz");
-            RuleFor(x => x.Username).MinimumLength(5).WithMessage("Kullanıcı adı en az 5 karakter olmalı.");
-            RuleFor(x => x.Password).Equal(y => y.ConfirmPassword).WithMessage("Şifreler birbiri ile uyuşmuyor.");
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Name cannot be empty");
+            RuleFor(x => x.Surname).NotEmpty().WithMessage("Surname cannot be empty");
+            RuleFor(x => x.Mail).NotEmpty().WithMessage("Email cannot be empty");
+            RuleFor(x => x.Username).NotEmpty().WithMessage("Username cannot be empty");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Password cannot be empty");
+            RuleFor(x => x.ConfirmPassword).NotEmpty().WithMessage("Confirmation password cannot be empty");
+            RuleFor(x => x.Username).MinimumLength(5).WithMessage("Username must be at least 5 characters long.");
+            RuleFor(x => x.Password).Equal(y => y.ConfirmPassword).WithMessage("Passwords do not match.");
         }
     }
 }

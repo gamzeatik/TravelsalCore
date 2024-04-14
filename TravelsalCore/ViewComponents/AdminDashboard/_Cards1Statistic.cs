@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TraversalCoreProje.ViewComponents.AdminDashboard
+namespace TravelsalCore.ViewComponents.AdminDashboard
 {
     public class _Cards1Statistic : ViewComponent
     {

@@ -19,6 +19,11 @@ namespace BusinessLayer.Concrete
             _guideDal = guideDal;
         }
 
+        public List<Guide> ActiveGuideList()
+        {
+           return _guideDal.ActiveGuideList();
+        }
+
         public void TAdd(Guide t)
         {
             _guideDal.Insert(t);

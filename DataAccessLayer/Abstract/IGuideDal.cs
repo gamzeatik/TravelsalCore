@@ -11,5 +11,7 @@ namespace DataAccessLayer.Abstract
     {
         void ChangeToTrueByGuide(int id);
         void ChangeToFalseByGuide(int id);
+
+        List<Guide> ActiveGuideList();
     }
 }

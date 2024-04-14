@@ -85,7 +85,7 @@ namespace TravelsalCore.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(p.Username,p.Password,false,true);
+                var result = await _signInManager.PasswordSignInAsync(p.username,p.password,false,true);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "Profile",new {area="Member"});

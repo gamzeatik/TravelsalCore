@@ -5,15 +5,15 @@
     int sayac = 0;
 }
 
-<h1>Bize Ulaşın Mesajları</h1>
+<h3>Messages</h3>
 <table class="table table-bordered">
     <tr>
         <th>#</th>
-        <th>Gönderen</th>
-        <th>Konu</th>
-        <th>Tarih</th>
-        <th>Mesajı Aç</th>
-        <th>Sil</th>
+        <th>Sender</th>
+        <th>Subject</th>
+        <th>Date</th>
+        <th>Message</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -23,8 +23,8 @@
             <td>@item.Name</td>
             <td>@item.Subject</td>
             <td>@item.MessageDate.ToString("dd.MMM.yyyy")</td>
-            <td><a href="" class="btn btn-outline-dark" style="width:100%"> Mesajı Aç </a></td>
-            <td><a href="" class="btn btn-outline-danger" style="width:100%"> Sil </a></td>
+            <td><a href="" class="btn btn-outline-dark" style="width:100%"> Message </a></td>
+            <td><a href="" class="btn btn-outline-danger" style="width:100%"> Delete </a></td>
         </tr>
     }
 </table>

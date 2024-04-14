@@ -28,5 +28,19 @@ namespace DataAccessLayer.EntityFramework
             context.Update(values);
             context.SaveChanges();
         }
+
+        List<Guide> IGuideDal.ActiveGuideList()
+        {
+            var list = context.Guides.ToList();
+            var activeGuides = new List<Guide>();
+            foreach (var item in list)
+            {
+                if (item.Status)
+                {
+                    activeGuides.Add(item);
+                }
+            }
+            return activeGuides;
+        }
     }
 }
