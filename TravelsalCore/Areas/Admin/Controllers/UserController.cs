@@ -2,11 +2,12 @@
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using TravelsalCore.Models;
 
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Route("Admin/User")]
     [Authorize(Roles = "Admin")]
 
     public class UserController : Controller
@@ -19,50 +20,46 @@ namespace TravelsalCore.Areas.Admin.Controllers
             _appUserService = appUserService;
             _reservationService = reservationService;
         }
-        [Route("")]
-        [Route("Index")]
         public IActionResult Index()
         {
             var values = _appUserService.TGetList();
             return View(values);
         }
-        [Route("DeleteUser/{id}")]
         public IActionResult DeleteUser(int id)
         {
             var values = _appUserService.TGetByID(id);
             _appUserService.TDelete(values);
-            return RedirectToAction("Index", "User", new
-            {
-                area = "Admin"
-            });
+            return RedirectToAction("Index");
         }
-        [Route("EditUser/{id}")]
         [HttpGet]
         public IActionResult EditUser(int id)
         {
-            var values= _appUserService.TGetByID(id);
-            return View(values);
+            var values = _appUserService.TGetByID(id);
+            var user = new UserUpdateViewModel();
+            user.Id = values.Id;
+            user.Name = values.Name;
+            user.Surname = values.Surname;
+            user.ImageUrl = values.ImageUrl;
+            return View(user);
         }
-        [Route("EditUser")]
         [HttpPost]
-        public IActionResult EditUser(AppUser appUser)
+        public IActionResult EditUser(UserUpdateViewModel user)
         {
-            _appUserService.TUpdate(appUser);
-            return RedirectToAction("Index", "User", new
-            {
-                area = "Admin"
-            });
+            var values = _appUserService.TGetByID(user.Id);
+            values.Name = user.Name;
+            values.Surname = user.Surname;
+            values.ImageUrl = user.ImageUrl;
+            _appUserService.TUpdate(values);
+            return RedirectToAction("Index");
         }
-        [Route("CommentUser/{id}")]
         public IActionResult CommentUser(int id)
         {
             _appUserService.TGetList();
             return View();
         }
-        [Route("ReservationUser/{id}")]
         public IActionResult ReservationUser(int id)
         {
-           var values= _reservationService.GetListWithReservationByAccepted(id);
+            var values = _reservationService.GetListWithReservationByAccepted(id);
             return View(values);
         }
     }

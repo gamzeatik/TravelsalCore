@@ -6,6 +6,11 @@
 
 <h3>Update</h3>
 <form method="post">
+    <div class="form-group">
+        @Html.Label("Guide")
+        @Html.DropDownList("Guide", (List<SelectListItem>)ViewBag.g, "Select Guide", new { @class = "form-control", onchange = "updateSelectedGuide()" })
+        <input type="hidden" id="selectedGuideID" asp-for="GuideID" name="GuideID" />
+    </div>
     @Html.HiddenFor(x=>x.DestinationID)
     <div class="form-group">
         @Html.Label("City")
@@ -48,4 +53,9 @@
     <br />
     <button class="btn btn-primary">Update</button>
 </form>
-
+<script>
+    function updateSelectedGuide() {
+        var selectedValue = document.getElementById("Guide").value;
+        document.getElementById("selectedGuideID").value = selectedValue;
+    }
+</script>

@@ -21,5 +21,16 @@ namespace TravelsalCore.Areas.Admin.Controllers
             var values=_contactUsService.TGetListContactUsByTrue();
             return View(values);
         }
+        public IActionResult MessageDetail(int id)
+        {
+            var values = _contactUsService.TGetByID(id);
+            return View(values);
+        }
+        public IActionResult Delete(int id)
+        {
+            var values = _contactUsService.TGetByID(id);
+            _contactUsService.TDelete(values);
+            return RedirectToAction("Index");
+        }
     }
 }

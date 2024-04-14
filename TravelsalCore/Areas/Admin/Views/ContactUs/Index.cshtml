@@ -23,8 +23,8 @@
             <td>@item.Name</td>
             <td>@item.Subject</td>
             <td>@item.MessageDate.ToString("dd.MMM.yyyy")</td>
-            <td><a href="" class="btn btn-outline-dark" style="width:100%"> Message </a></td>
-            <td><a href="" class="btn btn-outline-danger" style="width:100%"> Delete </a></td>
+            <td><a href="/Admin/ContactUs/MessageDetail/@item.ContactUsID" class="btn btn-outline-dark" style="width:100%"> Message </a></td>
+            <td><a href="/Admin/ContactUs/Delete/@item.ContactUsID" class="btn btn-outline-danger" style="width:100%"> Delete </a></td>
         </tr>
     }
 </table>

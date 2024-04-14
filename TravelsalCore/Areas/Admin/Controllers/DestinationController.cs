@@ -4,60 +4,63 @@ using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TravelsalCore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Route("Admin/Destination")]
     [Authorize(Roles = "Admin")]
 
     public class DestinationController : Controller
     {
-        //DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());
         private readonly IDestinationService _destinationService;
+        GuideManager guideManager = new GuideManager(new EfGuideDal());
 
         public DestinationController(IDestinationService destinationService)
         {
             _destinationService = destinationService;
         }
-        [Route("")]
-        [Route("Index")]
+
         public IActionResult Index()
         {
             var values = _destinationService.TGetList();
             return View(values);
         }
-        [Route("AddDestination")]
+
         [HttpGet]
         public IActionResult AddDestination()
         {
             return View();
         }
-        [Route("AddDestination")]
+
         [HttpPost]
         public IActionResult AddDestination(Destination destination)
         {
             _destinationService.TAdd(destination);
             return RedirectToAction("Index");
         }
-        [Route("DeleteDestination/{id}")]
         public IActionResult DeleteDestination(int id)
         {
             var values = _destinationService.TGetByID(id);
             _destinationService.TDelete(values);
-            return RedirectToAction("Index", "Destination", new
-            {
-                area = "Admin"
-            });
+            return RedirectToAction("Index");
         }
-        [Route("UpdateDestination/{id}")]
         [HttpGet]
         public IActionResult UpdateDestination(int id)
         {
+
+            List<SelectListItem> guides = (from x in guideManager.TGetList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.Name,
+                                               Value = x.GuideID.ToString()
+                                           }).ToList();
+            ViewBag.g = guides;
             var values = _destinationService.TGetByID(id);
             return View(values);
         }
-        [Route("UpdateDestination")]
         [HttpPost]
         public IActionResult UpdateDestination(Destination destination)
         {
